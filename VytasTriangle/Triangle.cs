@@ -58,7 +58,7 @@ namespace VytasTriangle
         {
             get
             {
-                if ((a > b + c) && (b > a + c) && (c > a + b))
+                if (a + b <= c || a + c <= b || b + c <= a)
                     return false;
                 else
                     return true;
