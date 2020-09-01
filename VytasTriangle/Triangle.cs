@@ -12,6 +12,7 @@ namespace VytasTriangle
         public double b;
         public double c;
         public double h;
+        public Triangle() { } // конструктор
 
         public Triangle(double A, double H) // пустой конструктор
         {
@@ -84,6 +85,19 @@ namespace VytasTriangle
                 else
                     return true;
             }
+        }
+        // высота 
+        public double hA()
+        {
+            return Surface() / 2 / a;
+        }
+        public double hB()
+        {
+            return Surface() / 2 / b;
+        }
+        public double hC()
+        {
+            return Surface() / 2 / c;
         }
     }
 }

@@ -12,6 +12,7 @@ namespace VytasTriangle
 {
     public partial class Form1 : Form
     {
+        Triangle triangle = new Triangle();
         public Form1()
         {
             InitializeComponent();
@@ -22,7 +23,7 @@ namespace VytasTriangle
 
         }
 
-        private void Button1_Click(object sender, EventArgs e)
+        private void Button2_Click(object sender, EventArgs e)
         {
 
         }
