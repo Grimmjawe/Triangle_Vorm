@@ -11,6 +11,13 @@ namespace VytasTriangle
         public double a;
         public double b;
         public double c;
+        public double h;
+
+        public Triangle(double A, double H) // пустой конструктор
+        {
+            a = A;
+            h = H;
+        }
 
         public Triangle(double A, double B, double C) // конструктор
         {
@@ -30,6 +37,10 @@ namespace VytasTriangle
         public string outputC()
         {
             return Convert.ToString(c);
+        }
+        public string outputH()
+        {
+            return Convert.ToString(h);
         }
         // периметр
         public double Permimeter()
@@ -57,6 +68,11 @@ namespace VytasTriangle
         {
             get { return c; }
             set { c = value; }
+        }
+        public double GetSetH
+        {
+            get { return h; }
+            set { h = value; }
         }
         // проверка подлинности объекта
         public bool ExistTriangle
