@@ -12,12 +12,13 @@ namespace VytasTriangle
         public double b;
         public double c;
 
-        public Triangle(double A, double B, double C)
+        public Triangle(double A, double B, double C) // конструктор
         {
-            a = A;
+            a = A; // значения
             b = B;
             c = C;
         }
+        // выводы значений
         public string outputA()
         {
             return Convert.ToString(a);
@@ -26,19 +27,22 @@ namespace VytasTriangle
         {
             return Convert.ToString(b);
         }
-        public string outputB()
+        public string outputC()
         {
             return Convert.ToString(c);
         }
+        // периметр
         public double Permimeter()
         {
             return a + b + c;
         }
+        // площадь
         public double Surface()
         {
             double p = a + b + c;
             return Math.Sqrt(p * (p - a) * (p - b) * (p - c));
         }
+        // получить или изменить значение
         public double GetSetA
         {
             get { return a; }
@@ -54,6 +58,7 @@ namespace VytasTriangle
             get { return c; }
             set { c = value; }
         }
+        // проверка подлинности объекта
         public bool ExistTriangle
         {
             get
