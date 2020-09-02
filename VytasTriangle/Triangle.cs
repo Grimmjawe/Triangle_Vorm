@@ -12,12 +12,15 @@ namespace VytasTriangle
         public double b;
         public double c;
         public double h;
+        public bool ifh = false;
+        public int type = 0;
         public Triangle() { } // конструктор
 
         public Triangle(double A, double H) // пустой конструктор
         {
             a = A;
             h = H;
+            ifh = true;
         }
 
         public Triangle(double A, double B, double C) // конструктор
@@ -25,6 +28,8 @@ namespace VytasTriangle
             a = A; // значения
             b = B;
             c = C;
+            if (a == b || b == c || c == a)
+                type = 1; // равнобедренным
         }
         // выводы значений
         public string outputA()
@@ -51,8 +56,17 @@ namespace VytasTriangle
         // площадь
         public double Surface()
         {
-            double p = a + b + c;
-            return Math.Sqrt(p * (p - a) * (p - b) * (p - c));
+            double s, p = 0;
+            if (ifh)
+            {
+                s = a / 2 * h;
+            }
+            else
+            {
+                p = (a + b + c) / 2;
+                s = Math.Sqrt(p * (p - a) * (p - b) * (p - c));
+            }
+            return s;
         }
         // получить или изменить значение
         public double GetSetA
