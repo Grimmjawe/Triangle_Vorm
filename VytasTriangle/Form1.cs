@@ -22,8 +22,8 @@ namespace VytasTriangle
             Triangle triangle;
             listView1.Items.Clear();
             double a, b, c;
-            a = Convert.ToDouble(txtA.Text);
-            b = Convert.ToDouble(txtB.Text);
+            a = Convert.ToDouble(((txtA.Text.Trim() != "") ? txtA.Text : "0"));
+            b = Convert.ToDouble(((txtB.Text.Trim() != "") ? txtB.Text : "0"));
             if(txtC.Visible)
             {
                 c = Convert.ToDouble(txtC.Text);
@@ -34,6 +34,7 @@ namespace VytasTriangle
                 listView1.Items.Add("Периметр");
                 listView1.Items.Add("Площадь");
                 listView1.Items.Add("Вожможен");
+                listView1.Items.Add("Тип");
                 listView1.Items[0].SubItems.Add(triangle.outputA());
                 listView1.Items[1].SubItems.Add(triangle.outputB());
                 listView1.Items[2].SubItems.Add(triangle.outputC());
@@ -43,6 +44,17 @@ namespace VytasTriangle
                     listView1.Items[5].SubItems.Add("Да");
                 else
                     listView1.Items[5].SubItems.Add("Нет");
+
+                if(triangle.GetType() == 1)
+                {
+                    listView1.Items[6].SubItems.Add("равносторонний");
+                    pictureBox1.Image = Image.FromFile(AppContext.BaseDirectory + "ravnostorpng.png");
+                }
+                else if (triangle.GetType() == 2)
+                {
+                    listView1.Items[6].SubItems.Add("равнобедренный");
+                    pictureBox1.Image = Image.FromFile(AppContext.BaseDirectory + "ravnobedpng.png");
+                }
             }
             else
             {
@@ -72,6 +84,11 @@ namespace VytasTriangle
             label3.Visible = false;
             if (!radioButton2.Checked)
                 radioButton1.Checked = true;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            new Form2().Show();
         }
     }
 }

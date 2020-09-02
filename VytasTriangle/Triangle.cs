@@ -28,8 +28,6 @@ namespace VytasTriangle
             a = A; // значения
             b = B;
             c = C;
-            if (a == b || b == c || c == a)
-                type = 1; // равнобедренным
         }
         // выводы значений
         public string outputA()
@@ -99,6 +97,21 @@ namespace VytasTriangle
                 else
                     return true;
             }
+        }
+        public int GetType()
+        {
+            if (a == b && b == c)
+            {
+                return 1;
+            }
+            else if (a == b || b == c || c == a)
+            {
+                return 2;
+            }
+            else if (true) { } // прямоугольным
+            else if (true) { } // остроугольным
+            else if (true) { } // тупоугольным
+            return 0;
         }
         // высота 
         public double hA()
