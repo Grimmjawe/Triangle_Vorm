@@ -21,8 +21,8 @@ namespace VytasTriangle
         {
             Triangle triangle;
             double a, b, c;
-            a = Convert.ToDouble((txtA.Text.Trim() != "") ? txtA.Text : "");
-            b = Convert.ToDouble((txtB.Text.Trim() != "") ? txtB.Text : "");
+            a = Convert.ToDouble((txtA.Text.Trim() != "") ? txtA.Text : "0");
+            b = Convert.ToDouble((txtB.Text.Trim() != "") ? txtB.Text : "0");
             label4.Text = "";
             label5.Text = "";
             label6.Text = "";
@@ -39,7 +39,7 @@ namespace VytasTriangle
             label17.Text = "";
             if (txtC.Visible)
             {
-                c = Convert.ToDouble(txtC.Text);
+                c = Convert.ToDouble((txtC.Text.Trim() != "") ? txtC.Text : "0");
                 triangle = new Triangle(a, b, c);
 
                 label4.Text = "Сторона a:";

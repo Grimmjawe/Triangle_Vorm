@@ -154,11 +154,11 @@
             // 
             // listView1
             // 
-            this.listView1.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.listView1.BackColor = System.Drawing.Color.White;
             this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.column1,
             this.column2});
-            this.listView1.ForeColor = System.Drawing.SystemColors.Window;
+            this.listView1.ForeColor = System.Drawing.Color.Black;
             this.listView1.Location = new System.Drawing.Point(12, 12);
             this.listView1.Name = "listView1";
             this.listView1.Size = new System.Drawing.Size(124, 173);

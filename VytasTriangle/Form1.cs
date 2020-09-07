@@ -16,11 +16,11 @@ namespace VytasTriangle
             Triangle triangle;
             listView1.Items.Clear();
             double a, b, c;
-            a = Convert.ToDouble(((txtA.Text.Trim() != "") ? txtA.Text : "0"));
-            b = Convert.ToDouble(((txtB.Text.Trim() != "") ? txtB.Text : "0"));
+            a = Convert.ToDouble((txtA.Text.Trim() != "") ? txtA.Text : "0");
+            b = Convert.ToDouble((txtB.Text.Trim() != "") ? txtB.Text : "0");
             if(txtC.Visible)
             {
-                c = Convert.ToDouble(txtC.Text);
+                c = Convert.ToDouble((txtC.Text.Trim() != "") ? txtC.Text : "0");
                 triangle = new Triangle(a, b, c); // создаем треугольник
                 listView1.Items.Add("Сторона a"); // добавляем ячейки в таблицу
                 listView1.Items.Add("Сторона b");

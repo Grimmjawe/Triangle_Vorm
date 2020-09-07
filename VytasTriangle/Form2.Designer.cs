@@ -327,6 +327,7 @@
             this.Controls.Add(this.Run_button);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form2";
+            this.Text = "VytasHub Калькулятор";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
