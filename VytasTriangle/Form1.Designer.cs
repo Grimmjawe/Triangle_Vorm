@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.button1 = new System.Windows.Forms.Button();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
@@ -49,15 +48,16 @@
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.button1.BackColor = System.Drawing.Color.White;
             this.button1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Location = new System.Drawing.Point(100, 248);
+            this.button1.Location = new System.Drawing.Point(93, 237);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(12, 12);
+            this.button1.Size = new System.Drawing.Size(28, 33);
             this.button1.TabIndex = 19;
+            this.button1.Text = "0";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -74,7 +74,7 @@
             // radioButton2
             // 
             this.radioButton2.AutoSize = true;
-            this.radioButton2.ForeColor = System.Drawing.SystemColors.Window;
+            this.radioButton2.ForeColor = System.Drawing.Color.Black;
             this.radioButton2.Location = new System.Drawing.Point(32, 252);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(43, 17);
@@ -86,7 +86,7 @@
             // 
             this.radioButton1.AutoSize = true;
             this.radioButton1.Checked = true;
-            this.radioButton1.ForeColor = System.Drawing.SystemColors.Window;
+            this.radioButton1.ForeColor = System.Drawing.Color.Black;
             this.radioButton1.Location = new System.Drawing.Point(32, 234);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(55, 17);
@@ -127,8 +127,8 @@
             // 
             // txtC
             // 
-            this.txtC.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.txtC.ForeColor = System.Drawing.SystemColors.Window;
+            this.txtC.BackColor = System.Drawing.Color.White;
+            this.txtC.ForeColor = System.Drawing.Color.Black;
             this.txtC.Location = new System.Drawing.Point(223, 211);
             this.txtC.Name = "txtC";
             this.txtC.Size = new System.Drawing.Size(100, 20);
@@ -136,8 +136,8 @@
             // 
             // txtB
             // 
-            this.txtB.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.txtB.ForeColor = System.Drawing.SystemColors.Window;
+            this.txtB.BackColor = System.Drawing.Color.White;
+            this.txtB.ForeColor = System.Drawing.Color.Black;
             this.txtB.Location = new System.Drawing.Point(117, 211);
             this.txtB.Name = "txtB";
             this.txtB.Size = new System.Drawing.Size(100, 20);
@@ -145,8 +145,8 @@
             // 
             // txtA
             // 
-            this.txtA.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.txtA.ForeColor = System.Drawing.SystemColors.Window;
+            this.txtA.BackColor = System.Drawing.Color.White;
+            this.txtA.ForeColor = System.Drawing.Color.Black;
             this.txtA.Location = new System.Drawing.Point(12, 211);
             this.txtA.Name = "txtA";
             this.txtA.Size = new System.Drawing.Size(100, 20);
@@ -185,11 +185,11 @@
             // 
             // Run_button
             // 
-            this.Run_button.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.Run_button.BackColor = System.Drawing.Color.White;
             this.Run_button.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.Run_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Run_button.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Run_button.ForeColor = System.Drawing.SystemColors.Window;
+            this.Run_button.ForeColor = System.Drawing.Color.Black;
             this.Run_button.Location = new System.Drawing.Point(127, 237);
             this.Run_button.Name = "Run_button";
             this.Run_button.Size = new System.Drawing.Size(85, 33);
@@ -202,7 +202,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(334, 281);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.radioButton2);
@@ -217,9 +217,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.Run_button);
             this.Controls.Add(this.button1);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
-            this.Text = "VytasHub Calc";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

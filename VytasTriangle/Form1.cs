@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace VytasTriangle
@@ -27,15 +21,15 @@ namespace VytasTriangle
             if(txtC.Visible)
             {
                 c = Convert.ToDouble(txtC.Text);
-                triangle = new Triangle(a, b, c);
-                listView1.Items.Add("Сторона a");
+                triangle = new Triangle(a, b, c); // создаем треугольник
+                listView1.Items.Add("Сторона a"); // добавляем ячейки в таблицу
                 listView1.Items.Add("Сторона b");
                 listView1.Items.Add("Сторона c");
                 listView1.Items.Add("Периметр");
                 listView1.Items.Add("Площадь");
                 listView1.Items.Add("Вожможен");
                 listView1.Items.Add("Тип");
-                listView1.Items[0].SubItems.Add(triangle.outputA());
+                listView1.Items[0].SubItems.Add(triangle.outputA()); // выволим значения сторон и остальные данные
                 listView1.Items[1].SubItems.Add(triangle.outputB());
                 listView1.Items[2].SubItems.Add(triangle.outputC());
                 listView1.Items[3].SubItems.Add(Convert.ToString(triangle.Permimeter()));
@@ -63,7 +57,7 @@ namespace VytasTriangle
                 listView1.Items.Add("Высота h");
                 listView1.Items.Add("Площадь");
                 listView1.Items[0].SubItems.Add(triangle.outputA());
-                listView1.Items[1].SubItems.Add(triangle.outputH());
+                listView1.Items[1].SubItems.Add(triangle.outputH()); 
                 listView1.Items[2].SubItems.Add(Convert.ToString(Math.Round(triangle.Surface(), 2)));
             }
         }
@@ -88,7 +82,8 @@ namespace VytasTriangle
 
         private void button1_Click(object sender, EventArgs e)
         {
-            new Form2().Show();
+            new Form2(this).Show();
+            this.Hide();
         }
     }
 }

@@ -61,7 +61,7 @@
             // 
             this.radioButton2.AutoSize = true;
             this.radioButton2.ForeColor = System.Drawing.SystemColors.Window;
-            this.radioButton2.Location = new System.Drawing.Point(32, 252);
+            this.radioButton2.Location = new System.Drawing.Point(23, 252);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(43, 17);
             this.radioButton2.TabIndex = 30;
@@ -74,7 +74,7 @@
             this.radioButton1.AutoSize = true;
             this.radioButton1.Checked = true;
             this.radioButton1.ForeColor = System.Drawing.SystemColors.Window;
-            this.radioButton1.Location = new System.Drawing.Point(32, 234);
+            this.radioButton1.Location = new System.Drawing.Point(23, 234);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(55, 17);
             this.radioButton1.TabIndex = 29;
@@ -156,9 +156,9 @@
             this.Run_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Run_button.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Run_button.ForeColor = System.Drawing.SystemColors.Window;
-            this.Run_button.Location = new System.Drawing.Point(117, 237);
+            this.Run_button.Location = new System.Drawing.Point(113, 237);
             this.Run_button.Name = "Run_button";
-            this.Run_button.Size = new System.Drawing.Size(102, 33);
+            this.Run_button.Size = new System.Drawing.Size(107, 33);
             this.Run_button.TabIndex = 20;
             this.Run_button.Text = "Посчитать";
             this.Run_button.UseVisualStyleBackColor = false;
@@ -327,7 +327,6 @@
             this.Controls.Add(this.Run_button);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form2";
-            this.Text = "VytasHub Calc";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
